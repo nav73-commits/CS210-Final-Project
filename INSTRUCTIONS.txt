@@ -1,0 +1,45 @@
+PHARMACY DATABASE MANAGEMENT SYSTEM - RUN INSTRUCTIONS
+
+Follow these steps to set up and run the project on your local machine.
+
+1. PREREQUISITES
+----------------
+Ensure you have Python installed on your system (Python 3.8 or higher is recommended).
+You can check this by running: python --version
+
+2. INSTALL DEPENDENCIES
+-----------------------
+Open a terminal or command prompt in the project's root folder and run the following command to install the required libraries:
+
+pip install -r requirements.txt
+
+3. INITIALIZE THE DATABASE (OPTIONAL)
+--------------------------------------
+If you want to start with a fresh database or ensure the schema is correct, run:
+
+python migrate_db.py
+
+4. RUN THE WEB FRONTEND
+-----------------------
+To start the web application, run:
+
+python app.py
+
+Once started, the terminal will show that the server is running. You can then open your web browser and go to the address shown (usually http://127.0.0.1:5000).
+
+5. RUN THE JUPYTER NOTEBOOK
+---------------------------
+To perform data analysis or load the Kaggle dataset:
+- Navigate to the folder: "Pharmacy Database Mangement System Using Python and SQL"
+- Open the file: "Pharmacy_Database.ipynb"
+- Use VS Code or Jupyter Notebook to "Run All" cells.
+
+Note: The Notebook and the Web Frontend share the same database. Any changes made in the notebook will be reflected on the website.
+
+6. PROJECT STRUCTURE
+--------------------
+- app.py: The Flask web application.
+- pharmacy_database.db: The shared SQLite database.
+- templates/: HTML files for the web interface.
+- requirements.txt: List of required Python packages.
+- Pharmacy Database Mangement System Using Python and SQL/: Contains the data analysis notebook and Kaggle data.
